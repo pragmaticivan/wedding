@@ -1,8 +1,7 @@
-var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200
+document.addEventListener('DOMContentLoaded', function (event) {
+  const elem = document.querySelector('.grid');
+  const msnry = new Masonry( elem, {
+    itemSelector: '.grid-item',
+    transitionDuration : 0
+  });
 });
-
-

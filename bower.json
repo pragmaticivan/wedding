@@ -2,8 +2,7 @@
   "name": "wedding",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.6",
-    "masonry": "^4.2.0"
+    "bootstrap": "~4.0.0-alpha.6"
   },
   "devDependencies": {
     "chai": "^4.1.1",

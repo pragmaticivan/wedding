@@ -6,6 +6,7 @@ const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const ghPages = require('gulp-gh-pages');
+const imageResize = require('gulp-image-resize');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -70,6 +71,14 @@ gulp.task('html', ['styles', 'scripts'], () => {
       removeStyleLinkTypeAttributes: true
     })))
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('resize', function() {
+  gulp.src(['app/images/gallery/original/**/*.jpg'])
+    .pipe(imageResize({
+      width: 500
+    }))
+    .pipe(gulp.dest('app/images/gallery/thumbs'));
 });
 
 gulp.task('images', () => {
