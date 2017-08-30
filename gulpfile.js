@@ -79,6 +79,12 @@ gulp.task('resize', function() {
       width: 500
     }))
     .pipe(gulp.dest('app/images/gallery/thumbs'));
+
+  gulp.src(['app/images/gallery/original/**/*.jpg'])
+    .pipe(imageResize({
+      width: 1500
+    }))
+    .pipe(gulp.dest('app/images/gallery/large'));
 });
 
 gulp.task('images', () => {
