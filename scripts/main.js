@@ -1,1 +1,1 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(e){var t=document.querySelector(".grid");new Masonry(t,{itemSelector:".grid-item",transitionDuration:0})});
+"use strict";document.addEventListener("DOMContentLoaded",function(e){var t=document.querySelector(".grid");imagesLoaded(t,function(){new Masonry(t,{itemSelector:".grid-item",transitionDuration:0})})});
