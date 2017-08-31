@@ -134,6 +134,8 @@ h2 {
   padding: 100px 0;
   .wedding-image {
     padding-bottom: 20px;
+    min-width: 300px;
+
   }
   h2 {
     padding-bottom: 40px;
@@ -266,3 +268,16 @@ h2 {
   }
 }
 // .grid-item--width2 { width: 400px; }
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}

@@ -11,7 +11,7 @@ const imageResize = require('gulp-image-resize');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-let dev = true;
+let dev = false;
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -74,17 +74,17 @@ gulp.task('html', ['styles', 'scripts'], () => {
 });
 
 gulp.task('resize', function() {
-  gulp.src(['app/images/gallery/original/**/*.jpg'])
+  gulp.src(['app/images/gallery/large/**/*.jpg'])
     .pipe(imageResize({
-      width: 500
+      width: 350
     }))
     .pipe(gulp.dest('app/images/gallery/thumbs'));
 
-  gulp.src(['app/images/gallery/original/**/*.jpg'])
-    .pipe(imageResize({
-      width: 1500
-    }))
-    .pipe(gulp.dest('app/images/gallery/large'));
+  // gulp.src(['app/images/gallery/original/**/*.jpg'])
+  //   .pipe(imageResize({
+  //     width: 1500
+  //   }))
+  //   .pipe(gulp.dest('app/images/gallery/large'));
 });
 
 gulp.task('images', () => {
