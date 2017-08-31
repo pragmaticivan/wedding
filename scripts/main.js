@@ -1,1 +1,1 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(e){var t=document.querySelector(".grid");imagesLoaded(t,function(){new Masonry(t,{itemSelector:".grid-item",transitionDuration:0})})});
+"use strict";document.addEventListener("DOMContentLoaded",function(t){var e=document.querySelector(".grid");imagesLoaded(e,function(){new Masonry(e,{itemSelector:".grid-item",transitionDuration:0})})}),$(document).ready(function(){$(".grid").lightGallery({thumbnail:!0,download:!1,getCaptionFromTitleOrAlt:!1,selector:".grid-item a"})});
