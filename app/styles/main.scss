@@ -69,7 +69,6 @@ h2 {
 }
 
 // Brazil meets California
-
 .brazil-meets-california {
   padding: 100px 0;
   h2 {
@@ -100,8 +99,6 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  // height: 570px;
   padding-bottom: 100px;
   h2 {
     color: #ffffff;
@@ -210,12 +207,16 @@ h2 {
 }
 
 // Gallery
-
 .gallery {
   padding: 100px 0;
-  // min-height: 2900px;
 }
-
+.photos-by {
+  text-align: right;
+  a {
+    color: $dark-green;
+    font-weight: bold;
+  }
+}
 
 // Registry
 .registry {
@@ -250,7 +251,6 @@ h2 {
     color: $dark-green;
   }
 }
-
 
 //FADE IN BOTTOM
 @-webkit-keyframes fadeIn {
